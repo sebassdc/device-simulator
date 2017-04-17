@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {IndexRoute, Router, hashHistory} from 'react-router';
+import {Route, BrowserRouter as Router} from 'react-router-dom';
+import {Style} from 'radium';
 import Main from './Main';
 
 ReactDOM.render(
-	<Router history={hashHistory}>
-		<IndexRoute component={Main} />
-	</Router>,
-  document.getElementById('root')
-);
+	<Router>
+	<div>
+		<Style rules={{
+			body: {
+				display: "flex",
+				height: "1vh",
+			}
+		}}/>
+		<Route exact path="/" component={Main}/>
+	</div>
+</Router>, document.getElementById('root'));
