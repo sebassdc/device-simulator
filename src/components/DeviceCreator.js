@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Radium from 'radium';
 import BackArrow from './BackArrow';
-import formDeviceCreate from './formDeviceCreate';
+import FormDeviceCreate from './FormDeviceCreate';
 
 let styles = {
 	base: {
@@ -10,7 +10,8 @@ let styles = {
 		marginTop: "30px",
 		display: "flex",
 		alignItems: "flex-start",
-		flexGrow: 1
+		flexGrow: 1,
+		flexDirection: "column",
 	}
 }
 
@@ -22,7 +23,7 @@ class DeviceCreator extends Component {
 				<h1 style={{
 						margin: '10%',
 					}}>DeviceCreator</h1>
-				<formDeviceCreate/>
+				<FormDeviceCreate/>
 			</div>
 		);
 	}

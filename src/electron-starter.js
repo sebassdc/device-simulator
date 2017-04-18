@@ -3,6 +3,7 @@ const electron = require('electron');
 const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
+const ipc = electron.ipcMain;
 
 const path = require('path');
 const url = require('url');
@@ -58,3 +59,7 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+ipc.on('gen-device-and-driver', (event, arg) => {
+	event.sender.send('gen-device-and-driver-reply', arg);
+});
