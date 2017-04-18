@@ -1,9 +1,8 @@
-# Boilerplate react + electron
+# Device simulator
 
-
-Usando:
-- [create-react-app](https://github.com/facebookincubator/create-react-app)
-- [electron-builder](https://github.com/electron-userland/electron-builder)
-- [Radium](http://formidable.com/open-source/radium/)
-
-Inspirado en el [blog](https://medium.freecodecamp.com/building-an-electron-application-with-create-react-app-97945861647c) de Chirstian Sepulveda.
+### devs
+```bash
+git clone https://github.com/sebassdc/device-simulator.git
+yarn install
+yarn run dev
+```
