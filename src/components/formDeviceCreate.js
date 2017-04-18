@@ -3,21 +3,16 @@ import Radium from 'radium';
 
 let styles = {
 	base: {
-		height: "80vh",
-		width: "80vw",
-		marginTop: "30px",
-		display: "flex",
-		alignItems: "center",
-		flexGrow: 1
+		width: '50px',
 	}
 }
 
 class formDeviceCreate extends Component {
 	render() {
 		return (
-			<div>
+			<div style={[styles.base, this.props.style]}>
 				<form>
-					
+					<input label="name" placeholder="Nombre"></input>
 				</form>
 			</div>
 		);

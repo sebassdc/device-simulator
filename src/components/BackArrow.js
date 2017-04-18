@@ -12,24 +12,25 @@ const positionStyles = {
 const sizeStyles = {
 	base: {
 		width: "2vh",
-		padding: "1vh 2vh",
+		padding: "1vh",
 	}
 }
 
 const styles = {
 	base: {
-		backgroundColor: 'transparent',
+		display: 'flex',
+		alignItems: 'center',
+		width: "6vh",
 		border: 0,
 		borderRadius: '2px',
-		transition: "backgroundColor 1s",
+		transition: "background 0.3s ease-in-out",
 
 		':hover': {
-			backgroundColor: 'rgba(0, 0, 0, 0.1)',
-			transition: "backgroundColor 1s ease-in-out",
+			background: 'rgba(0, 0, 0, 0.1)',
 		},
 
 		':active': {
-			backgroundColor: 'rgba(#ffffff, 0)',
+			background: 'rgba(#ffffff, 0)',
 			transform: 'translateY(2px)'
 		}
 	},

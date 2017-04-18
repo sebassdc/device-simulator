@@ -14,6 +14,7 @@ ReactDOM.render(
 			body: {
 				display: "flex",
 				height: "1vh",
+				fontFamily: 'sans-serif'
 			}
 		}}/>
 		<Route exact path="/" component={Main}/>
