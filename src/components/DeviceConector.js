@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Radium from 'radium';
-import Button from './components/Button';
+import BackArrow from './BackArrow';
 
 let styles = {
 	base: {
@@ -13,15 +13,15 @@ let styles = {
 	}
 }
 
-class Main extends Component {
+class DeviceConector extends Component {
 	render() {
 		return (
 			<div style={styles.base}>
-				<Button>Crea un nuevo dispositivo!</Button>
-				<Button>Conecta un dispositivo</Button>
+				<BackArrow/>
+				<h1>DeviceConector</h1>
 			</div>
 		);
 	}
 }
-Main = Radium(Main)
-export default Main;
+DeviceConector = Radium(DeviceConector)
+export default DeviceConector;

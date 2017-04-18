@@ -5,11 +5,15 @@
   "author": "OSS Community",
   "private": true,
   "devDependencies": {
+    "babel-eslint": "^7.2.2",
     "electron": "^1.4.14",
     "electron-builder": "^13.6.0",
     "electron-devtools-installer": "^2.2.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
     "foreman": "^2.0.0",
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "stylelint": "^7.10.1"
   },
   "dependencies": {
     "color": "^1.0.3",
